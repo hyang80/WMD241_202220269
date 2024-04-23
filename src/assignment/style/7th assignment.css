@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+:after,
+::before {
+  border: 0 solid #d6dae5;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #464951;
+  background-color: #fcfcfc;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  display: block;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* 리스트 관련 */
+li {
+  display: list-item;
+  unicode-bidi: isolate;
+}
+
+/* 이미지 관련 여기임 */
+img {
+  max-width: 100%;
+  height: auto;
+  overflow: clip;
+  border-style: solid;
+  display: block;
+  vertical-align: middle;
+}
+
+.text-gray-400 {
+  color: #dadbdc;
+}
+a {
+  color: #00ad6a;
+  font-weight: 600;
+  background-color: transparent;
+}
+/* 여기까지 */
+
+header {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.md\:bg-G {
+  background-color: #eafaf1;
+}
+
+.md\:py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+/* 여기까지 */
+
+/* 13 nav class */
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex {
+  display: flex;
+}
+/* 여기까지 */
+
+/* 26 버튼 클래스 관련 */
+.md\:h {
+  display: none;
+}
+
+.text-Gr {
+  color: #00ad6a;
+}
+
+.items-center {
+  align-items: center;
+}
+
+button {
+  padding: 0;
+  line-height: inherit;
+}
+/*여기까지*/
+
+/* 28 sgv 클래스 관련  */
+
+.fill-current {
+  fill: currentColor;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+  overflow-clip-margin: content-box;
+}
+.w {
+  width: 2rem;
+}
+
+.h {
+  height: 2rem;
+}
+/*여기까지*/
+
+.sm-max {
+  background-color: #eafaf1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 0;
+}
+
+.text-gray-400 {
+  color: #dadbdc;
+}
+
+.marginR-10 {
+  margin-right: 2.5rem;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+/* 53번 째 줄 스타일 모음*/
+.button-outline {
+  color: #00ad6a;
+  border-color: #00ad6a;
+  background-color: transparent;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.text-base {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+/* 여기 까지 */
