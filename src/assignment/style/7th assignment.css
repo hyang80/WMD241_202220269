@@ -4,8 +4,12 @@
 
 *,
 :after,
-::before {
+:before {
   border: 0 solid #d6dae5;
+}
+*,
+:after,
+:before {
   box-sizing: inherit;
 }
 
@@ -197,25 +201,6 @@ svg:not(:root) {
 }
 /* 여기 까지 */
 
-/* P모음 */
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-.text-gray-800 {
-  color: #080c16;
-}
-
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
-}
-
 /* H모음 */
 
 .h1,
@@ -272,4 +257,60 @@ h1 {
   unicode-bidi: isolate;
 }
 
-/* 여기까지*/
+/* 여기까지 아래는 충돌 수정사항, 나중에 정리*/
+
+p {
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+  font-size: 1.125rem;
+  display: block;
+
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+.text-gray-800 {
+  color: #080c16;
+}
+
+.h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #080c16;
+}
+
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.lg\:flex {
+  justify-content: center; /* 화면 정 중앙에 위치하도록 수정 */
+}
+
+.lg\:text-center {
+  text-align: center; /* 텍스트를 가운데 정렬로 수정 */
+}
+@media screen and (max-width: 767px) {
+  .lg\:text-center {
+    text-align: left; /* 웹 크기가 767px 이하이면 왼쪽 정렬로 변경 */
+    margin: 0; /* 왼쪽 정렬 시 가운데 정렬을 위해 마진 제거 */
+  }
+  .lg\:flex {
+    justify-content: flex-start; /* 웹 크기가 767px 이하이면 왼쪽 정렬로 변경 */
+  }
+}
