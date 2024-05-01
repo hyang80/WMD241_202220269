@@ -55,7 +55,6 @@ img {
   overflow: clip;
   border-style: solid;
   display: block;
-  vertical-align: middle;
 }
 
 .text-gray-400 {
