@@ -1,0 +1,14 @@
+* *::after *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 150%;
+}
+
+.container {
+  max-width: auto;
+  max-height: 3rem;
+  background-color: #f6f6eb;
+}
