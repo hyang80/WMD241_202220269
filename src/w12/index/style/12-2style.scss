@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* 그리드 템플릿 컬럼과 리핏, 최소 픽셀 선정으로 간격 자동생성, 근데 이것만 생성 시 모든 칼럼의 크기가 똑같지 않음 */
+  grid-row: 1fr;
+  grid-auto-rows: 1fr;
+  /* 이 비율 선정 시에 칼럼의 크기가 똑같아짐, 여백이 많이 생기긴 하지만 */
+  background-color: oklch(0.95 0 0);
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1rem;
+  background-color: oklch(0.9 0.2 240);
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    background-color: oklch(0.9 0.2 120);
+  }
+  &:--state-clicked {
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+}

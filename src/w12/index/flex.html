@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple js</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .container {
+        max-width: 75rem;
+        margin-inline: auto;
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* 그리드 템플릿 컬럼과 리핏, 최소 픽셀 선정으로 간격 자동생성, 근데 이것만 생성 시 모든 칼럼의 크기가 똑같지 않음 */
+        grid-row: 1fr;
+        grid-auto-rows: 1fr;
+        /* 이 비율 선정 시에 칼럼의 크기가 똑같아짐, 여백이 많이 생기긴 하지만 */
+        background-color: oklch(0.95 0 0);
+        gap: 1.5rem;
+      }
+
+      .card {
+        padding: 1rem;
+        background-color: oklch(0.9 0.2 240);
+        transition: all 300ms ease-in-out;
+        /* 호버 속도 지정 */
+      }
+
+      .card:hover {
+        background-color: oklch(0.9 0.2 120);
+      }
+      /* 호버를 통해서 컬럼의 배경색 변경 */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">Lorem.</div>
+      <div class="card">Mollitia, quaerat.</div>
+      <div class="card">Illo, debitis cumque!</div>
+      <div class="card">Iusto et odio velit?</div>
+      <div class="card">Ducimus sed reiciendis possimus harum.</div>
+      <div class="card">
+        Nostrum repellendus repellat excepturi similique animi?
+      </div>
+      <div class="card">
+        Facere debitis, doloremque officiis vero eaque laboriosam.
+      </div>
+      <div class="card">Adipisci esse nisi officia hic dolor fugit ad!</div>
+      <div class="card">
+        Eius sunt perspiciatis et corporis iure placeat, voluptatum totam?
+      </div>
+      <div class="card">
+        Placeat mollitia vitae exercitationem animi sequi blanditiis reiciendis
+        voluptate omnis!
+      </div>
+    </div>
+  </body>
+</html>
