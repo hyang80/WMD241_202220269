@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>step2_Lottie Embaded</title>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script>
+      LottieInteractivity.create({
+        player: "#Lottie-2",
+        mode: "cursor",
+        actions: [
+          {
+            type: "click",
+            forceFlag: false,
+          },
+        ],
+      });
+    </script>
+    <link rel="stylesheet" href="./style/lottiedsstyle.css" />
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <h1>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+          praesentium?
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          corporis esse impedit mollitia laboriosam maiores aliquam voluptates,
+          dolores praesentium cum. Illum ipsa minima libero quos quis. Ratione
+          laboriosam sequi enim impedit iusto aut nulla odit quasi iste eveniet?
+          Distinctio, atque quis harum modi optio ex ratione est nihil
+          reprehenderit recusandae!
+        </p>
+
+        <lottie-player
+          id="lottie-1"
+          class="lottie"
+          src="https://lottie.host/78268668-d04b-4516-bdb9-73b8b4404b7f/n98voqag05.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+          officia, fuga excepturi dicta explicabo delectus sed optio magni cum
+          expedita.
+        </p>
+
+        <lottie-player
+          id="lottie-2"
+          class="lottie"
+          src="https://lottie.host/78268668-d04b-4516-bdb9-73b8b4404b7f/n98voqag05.json"
+          background="transparent"
+          speed="1"
+        ></lottie-player>
+      </div>
+    </div>
+  </body>
+</html>
